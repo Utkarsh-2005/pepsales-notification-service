@@ -27,6 +27,10 @@ io.on('connection', socket => {
   if (uid) {
     socket.join(uid)
   }
+    socket.on('in-app-notification', payload => {
+    console.log('server received in-app from worker:', payload)
+    io.to(payload.userId).emit('in-app-notification', payload)
+  })
 })
 
 connectDB().then(() => {
