@@ -10,7 +10,7 @@ import { sendSMS }   from './services/smsService.js'
 const {
   MONGO_URI,
   RABBIT_URL,
-  SOCKET_URL = 'http://localhost:5000',
+  SOCKET_URL,
   MAX_ATTEMPTS = 5,
   RETRY_DELAY_MS = 5000
 } = process.env
