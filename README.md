@@ -146,7 +146,7 @@ x-api-key: supersecret123
 
 1. **Enter your valid UID** into the **Notifications** page of the UI demo (or subscribe via Socket.io):
 
-   * URL: `https://notification-ui-jkrv-2nmpyqlk2-utkarsh-jhas-projects.vercel.app/notifications`
+   * URL: `https://notification-ui-xy4e.vercel.app/notifications`
    * Input your `uid` and click **Load History**; this joins your Socket.io room.
 
 2. **Send an In-App** notification (via API or UI).
