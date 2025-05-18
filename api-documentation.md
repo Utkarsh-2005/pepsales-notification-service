@@ -12,8 +12,6 @@ x-api-key: supersecret123
 
 ````
 
----
-
 ## 1. Create User
 
 Endpoint:  
@@ -188,5 +186,3 @@ Content-Type: application/json
 Live frontend:
 [https://notification-ui-xy4e.vercel.app/](https://notification-ui-xy4e.vercel.app/)
 
-```
-```
