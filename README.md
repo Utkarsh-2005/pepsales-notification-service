@@ -53,7 +53,7 @@ You can test real-time in-app notifications by entering your UID and observing t
 
    ```bash
    git clone https://github.com/Utkarsh-2005/pepsales-notification-service.git
-   cd PepSales-Assignment
+   cd pepsales-notification-service
    npm install
    ```
 
