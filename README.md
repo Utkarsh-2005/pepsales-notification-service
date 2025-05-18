@@ -111,7 +111,7 @@ Content-Type: application/json
 
 ![Notification](public/create-user.png)
 
-```json
+```http
 POST https://notification-service-utkarsh.koyeb.app/notifications
 x-api-key: supersecret123
 Content-Type: application/json
