@@ -7,16 +7,19 @@ import 'dotenv/config'
 import { connectDB } from './config/db.js'
 import userRoutes from './routes/userRoutes.js'
 import notificationRoutes from './routes/notificationRoutes.js'
+import requireApiKey  from './middleware/requireApiKey.js'
 
 const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 app.use(userRoutes)
-app.use(notificationRoutes)
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+
+app.use(requireApiKey)
+app.use(notificationRoutes)
 
 
 const server = http.createServer(app)

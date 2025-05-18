@@ -8,7 +8,7 @@ export async function createUser(req, res) {
   const uid = uidGen()
   const user = new User({ uid, name, email })
   await user.save()
-  res.status(201).json({ success: true, data: { uid, name, email, createdAt: user.createdAt } })
+  res.status(201).json({ success: true, data: { uid, name, email, createdAt: user.createdAt,  apiKey: process.env.NOTIF_API_KEY } })
 }
 
 export async function getUser(req, res) {

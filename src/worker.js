@@ -6,7 +6,6 @@ import Notification from './models/Notification.js'
 import { sendEmail } from './services/emailService.js'
 import { sendSMS }   from './services/smsService.js'
 
-// Environment
 const {
   MONGO_URI,
   RABBIT_URL,
@@ -15,15 +14,12 @@ const {
   RETRY_DELAY_MS = 5000
 } = process.env
 
-// MongoDB connection
 await mongoose.connect(MONGO_URI)
 console.log('Worker connected to MongoDB')
 
-// Socket.io client
 const socket = Client(SOCKET_URL, { transports: ['websocket'] })
 socket.on('connect', () => console.log('Worker connected to Socket.io'))
 
-// Process a single job
 async function processMessage(msg, channel) {
   const job = JSON.parse(msg.content.toString())
   console.log('Received job', job)
@@ -67,7 +63,6 @@ async function processMessage(msg, channel) {
   channel.ack(msg)
 }
 
-// Start the worker
 async function startWorker() {
   const conn = await amqp.connect(RABBIT_URL)
   const channel = await conn.createChannel()
