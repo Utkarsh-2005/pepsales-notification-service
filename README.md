@@ -111,7 +111,7 @@ Content-Type: application/json
 
 ![Notification](public/create-user.png)
 
-```http
+```json
 POST https://notification-service-utkarsh.koyeb.app/notifications
 x-api-key: supersecret123
 Content-Type: application/json
@@ -174,6 +174,16 @@ No manual polling needed — real-time delivery via WebSocket.
 
 * **UI demo** is provided for convenience; you can fully test via API clients.
 * Ensure your `x-api-key` header is present on **all** protected endpoints.
+
+## Future Improvements
+
+* Add unit & integration tests
+
+* Implement JWT-based auth & roles.
+
+* Add rate limiting (e.g. express-rate-limit).
+
+* Add Monitoring and Alerts.
 
 <p align="center"> Built by Utkarsh Jha </p> 
 
