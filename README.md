@@ -77,7 +77,7 @@ You can test real-time in-app notifications by entering your UID and observing t
 3. **Run Server & Worker**
 
    ```bash
-   npm run dev      # starts both API and worker via concurrently
+   npm start      # starts both API and worker via concurrently
    ```
 
    * API listens on `http://localhost:5000`
