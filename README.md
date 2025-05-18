@@ -115,11 +115,12 @@ Content-Type: application/json
 POST https://notification-service-utkarsh.koyeb.app/notifications
 x-api-key: supersecret123
 Content-Type: application/json
-
+```
+```bash
 {
   "userId": "<your-uid>",
-  "type": "in-app",        // or "email", "sms"
-  "to": "<recipient>",     // email, phone, or uid
+  "type": "in-app",        # or "email", "sms"
+  "to": "<recipient>",     # email, phone, or uid
   "message": "Hello world"
 }
 ```
