@@ -2,7 +2,7 @@
 # API Documentation
 
 Base URL:  
-`https://notification-service-utkarsh.koyeb.app`
+[https://notification-service-utkarsh.koyeb.app](https://notification-service-utkarsh.koyeb.app)
 
 All protected endpoints require this header:
 
@@ -11,7 +11,6 @@ All protected endpoints require this header:
 x-api-key: supersecret123
 
 ````
-
 ## 1. Create User
 
 Endpoint:  
